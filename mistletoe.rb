@@ -5,13 +5,13 @@
 class Mistletoe < Formula
   desc "Mistletoe CLI tool"
   homepage "https://github.com/keiji/mistletoe"
-  version "0.1.0-rc3"
+  version "0.1.0-rc4"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/keiji/mistletoe/releases/download/v0.1.0-rc3/mistletoe_0.1.0-rc3_darwin_amd64.tar.gz"
-      sha256 "92857efa4e8e3dd2d95d06eadf2958360f43862c495ccda8ec46307bf3f8195e"
+      url "https://github.com/keiji/mistletoe/releases/download/v0.1.0-rc4/mistletoe_0.1.0-rc4_darwin_amd64.tar.gz"
+      sha256 "3741eb2a86108fc369d0ac8276bfc72acd711957b7c0e550cf2009b5e6aa229f"
 
       def install
         bin.install "mstl"
@@ -19,8 +19,8 @@ class Mistletoe < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/keiji/mistletoe/releases/download/v0.1.0-rc3/mistletoe_0.1.0-rc3_darwin_arm64.tar.gz"
-      sha256 "f0a9a9df720a245cd47e635947269327e84e4900d5abf05414c90f9d3946f369"
+      url "https://github.com/keiji/mistletoe/releases/download/v0.1.0-rc4/mistletoe_0.1.0-rc4_darwin_arm64.tar.gz"
+      sha256 "48f27d9b2a9dac1821dcc832487ed1a597628c8a37d150277514517428eed4c2"
 
       def install
         bin.install "mstl"
@@ -31,16 +31,16 @@ class Mistletoe < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keiji/mistletoe/releases/download/v0.1.0-rc3/mistletoe_0.1.0-rc3_linux_amd64.tar.gz"
-      sha256 "8b5593dbee03ab6865bf9725a15cee76f38bee4caf3225a159d30bd6037e7491"
+      url "https://github.com/keiji/mistletoe/releases/download/v0.1.0-rc4/mistletoe_0.1.0-rc4_linux_amd64.tar.gz"
+      sha256 "44bd5746fef3c46cdc96aff7bb39257d679bd1fb75e45bf7374e6c3f9ef6e46e"
       def install
         bin.install "mstl"
         bin.install "mstl-gh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keiji/mistletoe/releases/download/v0.1.0-rc3/mistletoe_0.1.0-rc3_linux_arm64.tar.gz"
-      sha256 "a335f7ec4e5003d683763a48e1890b0de669c29943b2302bfc69f172b40ea5ac"
+      url "https://github.com/keiji/mistletoe/releases/download/v0.1.0-rc4/mistletoe_0.1.0-rc4_linux_arm64.tar.gz"
+      sha256 "f407049966989bf78abd11642dff87442d3005e5f5df13b76b9d860a0487fa76"
       def install
         bin.install "mstl"
         bin.install "mstl-gh"
